@@ -1,0 +1,157 @@
+:root {
+  --main-text-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --background-color: #f5f4fa;
+  --footer-color: #2f303a;
+  --footer-contacts: rgba(255, 255, 255, 0.6);
+  --main-title: #ffff;
+}
+body {
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  font-family: Raleway, sans-serif;
+  color: black;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.accent-logo {
+  color: var(--accent-color);
+}
+
+.nav-link {
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.contacts a {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--accent-color);
+}
+.hero {
+  background-color: var(--footer-color);
+}
+.hero-title {
+  color: var(--main-title);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  font-family: inherit;
+  color: var(--main-title);
+  background-color: var(--accent-color);
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+.list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.list-text {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.subtitle {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.team {
+  background-color: var(--background-color);
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.profession {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.bottom {
+  background-color: var(--footer-color);
+}
+.bottom .logo {
+  color: var(--main-title);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.address {
+  color: var(--main-title);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+}
+.list a {
+  color: var(--footer-contacts);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* PORTFOLIO */
+.examples .button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--main-text-color);
+  background-color: var(--background-color);
+}
+.button.primary {
+}
+.button:hover {
+  background-color: var(--accent-color);
+  color: #ffff;
+  cursor: pointer;
+}
+.portfolio a {
+  color: var(--main-text-color);
+}
+.titles {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.description {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.8;
+}
