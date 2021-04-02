@@ -5,27 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/webstudio.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/webstudio.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <div class="container">
+      <nav >
         <a href="" class="logo"><span class="accent-logo">Web</span>Studio</a>
-        <ul class="nav">
+        <ul class="list nav">
           <li><a href="" class="nav-link">Студия</a></li>
           <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
           <li><a href="" class="nav-link">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="contacts">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <ul class="list contacts">
+        <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
+      </div>
+      
     </header>
     <main>
       <section class="hero">
@@ -33,9 +37,10 @@
         <button type="button" class="hero-button">Заказать услугу</button>
       </section>
       <!--Content-section-->
-      <section>
+      <section class="section-text">
         <!--possible h2-->
-        <ul>
+        <div class="container">
+        <ul class="list">
           <li>
             <h3 class="list-title">Внимание к деталям</h3>
             <p class="list-text">
@@ -65,11 +70,13 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!--About me Section-->
       <section>
+        <div class="container">
         <h2 class="subtitle">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="list about">
           <li>
             <img src="./images/about-me/img.jpg" width="370" alt="Workspace" />
           </li>
@@ -84,6 +91,7 @@
             <img src="./images/about-me/img-3.jpg" width="370" alt="Testing" />
           </li>
         </ul>
+        </div>
       </section>
       <!--Our team section-->
       <section class="team">
@@ -127,7 +135,7 @@
     <footer class="bottom">
       <a href="" class="logo"><span class="accent-logo">Web</span>Studio</a>
       <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-      <ul class="list">
+      <ul class="list-footer">
         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
