@@ -30,7 +30,6 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -55,14 +54,12 @@ a {
   letter-spacing: 0.02em;
 }
 
-.nav .nav-link {
-}
 .item + .item {
   margin-left: 50px;
 }
 
 .logo {
-  margin-right: 93px;
+  margin-right: 91px;
   font-family: Raleway, sans-serif;
   color: black;
   font-weight: 700;
@@ -185,6 +182,9 @@ a {
 .about-item + .about-item {
   margin-left: 30px;
 }
+.about-image {
+  display: block;
+}
 /* OUR TEAM SECTION */
 .team {
   background-color: var(--background-color);
@@ -259,6 +259,15 @@ a {
 }
 
 /* PORTFOLIO */
+.prime-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.examples {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .examples .button {
   font-family: inherit;
   font-weight: 500;
@@ -267,23 +276,62 @@ a {
   color: var(--main-text-color);
   background-color: var(--background-color);
 }
-.button.primary {
+.button {
+  padding: 6px 22px;
+  border: 1px transparent;
+  border-radius: 4px;
 }
+.button-item + .button-item {
+  margin-left: 8px;
+}
+
 .button:hover {
   background-color: var(--accent-color);
   color: #ffff;
   cursor: pointer;
 }
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
 .portfolio a {
   color: var(--main-text-color);
 }
+.portfolio-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+.portfolio-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.portfolio-image {
+  display: block;
+}
 .titles {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .description {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.8;
+}
+.second {
+  display: block;
+  margin-right: 0px;
+  margin-bottom: 20px;
 }
