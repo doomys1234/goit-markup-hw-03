@@ -133,8 +133,12 @@ a {
   font-size: 14px;
   line-height: 1.71;
 }
+.no-padding {
+  padding-top: 0px;
+}
 .subtitle {
   margin-top: 0px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -155,7 +159,14 @@ a {
 }
 .bottom {
   background-color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+.secondary {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 .bottom .logo {
   color: var(--main-title);
   font-family: Raleway, sans-serif;
@@ -166,14 +177,24 @@ a {
 
 .address {
   color: var(--main-title);
+  margin-bottom: 9px;
   font-size: 14px;
   font-style: normal;
   line-height: 1.7;
+}
+.list-footer {
+  margin: 0px;
+
+  padding-left: 0px;
 }
 .list-footer a {
   color: var(--footer-contacts);
   font-size: 14px;
   line-height: 1.71;
+}
+.list-item:first-child {
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 /* PORTFOLIO */
