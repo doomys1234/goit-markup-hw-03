@@ -300,6 +300,7 @@ a {
 .portfolio-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  width: :370px;
 
   border-bottom: 1px solid #eeeeee;
 }
@@ -330,6 +331,7 @@ a {
   font-size: 16px;
   line-height: 1.8;
 }
+/* FOOTER */
 .second {
   display: block;
   margin-right: 0px;
