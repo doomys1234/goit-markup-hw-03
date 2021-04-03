@@ -30,12 +30,39 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
+.list {
+  margin: 0px;
+  padding: 0px;
+}
+/* HEADER */
+.top {
+  border: 1px solid #ececec;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.first-nav .nav {
+}
+.nav {
+  display: flex;
+  letter-spacing: 0.02em;
+}
+
+.nav .nav-link {
+}
+.item + .item {
+  margin-left: 50px;
+}
+
 .logo {
+  margin-right: 93px;
   font-family: Raleway, sans-serif;
   color: black;
   font-weight: 700;
@@ -47,6 +74,9 @@ a {
 }
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -57,31 +87,31 @@ a {
   color: var(--accent-color);
 }
 .contacts {
-  padding: 0px;
-  margin: 0px auto;
-
-  height: 100px;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  display: flex;
+  margin-left: auto;
 }
-.contacts a {
+
+.contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contacts-link {
-  display: inline-block;
-}
-.contacts a:hover,
-.contacts a:focus {
+
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
+/* HERO SECTION */
 .hero {
-  background-color: var(--footer-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
+  background-color: var(--footer-color);
 }
 .hero-title {
   margin-top: 0px;
@@ -98,7 +128,6 @@ a {
 }
 .hero-button {
   display: inline-block;
-  margin-bottom: 200px;
   padding: 10px 32px;
   border-radius: 4px;
   border: 1px transparent;
@@ -112,13 +141,17 @@ a {
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
+/* DESCRIPTION SECTION */
 .section-text {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.list {
-  margin: 0px;
-  padding: 0px;
+.describe {
+  display: flex;
+}
+
+.describe-item + .describe-item {
+  margin-left: 30px;
 }
 .list-title {
   margin-top: 0px;
@@ -129,10 +162,13 @@ a {
   text-transform: uppercase;
 }
 .list-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: var(--text-color);
   font-size: 14px;
   line-height: 1.71;
 }
+/* ABOUT ME SECTION */
 .no-padding {
   padding-top: 0px;
 }
@@ -143,16 +179,41 @@ a {
   line-height: 1.16;
   text-align: center;
 }
+.about {
+  display: flex;
+}
+.about-item + .about-item {
+  margin-left: 30px;
+}
+/* OUR TEAM SECTION */
 .team {
   background-color: var(--background-color);
 }
+.card {
+  display: flex;
+}
+.card-item {
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--main-title);
+}
+.card-item + .card-item {
+  margin-left: 30px;
+}
 .name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-transform: none;
 }
 
 .profession {
+  margin-top: 0px;
+  margin-bottom: 30px;
   color: var(--text-color);
   font-size: 14px;
   line-height: 1.71;
