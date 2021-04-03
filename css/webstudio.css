@@ -300,7 +300,7 @@ a {
 .portfolio-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  width: :370px;
+  width: calc((100% - 60px) / 3);
 
   border-bottom: 1px solid #eeeeee;
 }
